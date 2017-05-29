@@ -1,0 +1,1 @@
+C:\Bamboo-Deploy\setup.exe /s /v/qn

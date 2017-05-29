@@ -1,0 +1,57 @@
+﻿<Window x:Class="TFSWrapper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TFSWrapper"
+        mc:Ignorable="d"
+        Title="TFS Baseline" Height="auto" Width="auto">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Name="stkViewBaseline" Orientation="Horizontal">
+                <TextBlock Margin="10,10,10,10" HorizontalAlignment="Left" FontSize="20"><Run Text="View Baseline"/></TextBlock>
+                <TextBlock Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"><Run Text="BaseLine"/></TextBlock>
+                <ComboBox Name="cmbBaselines" Width="200" Margin="10,10,10,10" SelectionChanged="CmbBaselines_OnSelectionChanged" DisplayMemberPath="BaselineName" ItemsSource="{Binding Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"></ComboBox>
+                <Button Name="CreateNewBaseline" Margin="10" FontSize="14" Click="CreateNewBaseline_OnClick">Create Baseline</Button>
+            </StackPanel>
+            <StackPanel Name="stkCreateBaseline" Orientation="Horizontal">
+                <TextBlock Margin="10,10,10,10" HorizontalAlignment="Left" FontSize="20"><Run Text="Create Baseline"/></TextBlock>
+                <TextBlock Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"><Run Text="BaseLine Name"/></TextBlock>
+                <TextBox Name="txtBaselineName" Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" MaxLength="50" FontSize="15"></TextBox>
+                <Button Name="CreateBaseline" Margin="20" FontSize="14" Click="CreateBaseline_OnClick">Create</Button>
+            </StackPanel>
+            <StackPanel Name="stkWorkItems" Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="10,10,10,10" HorizontalAlignment="Left" FontSize="20"><Run Text="Work Items"/></TextBlock>
+                    <TextBlock Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"><Run Text="TFS Project Collection"/></TextBlock>
+                    <TextBox Name="txtProjectCollectionUrl" MinWidth="300" Margin="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></TextBox>
+                    <Button Name="Go" Margin="5,20,20,20" FontSize="14" Click="Go_OnClick">GO</Button>
+
+                    <Button Name="ViewBaseline" Margin="5,20,20,20" FontSize="14" Click="ViewBaseline_OnClick">View Baselines</Button>
+                </StackPanel>
+
+                <DataGrid Name="dataGrid" AutoGenerateColumns="True" ItemsSource="{Binding Mode=OneWay}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" VerticalScrollBarVisibility="Auto" >
+                </DataGrid>
+
+            </StackPanel>
+            <StackPanel Name="stkBaselinedWorkItems" Orientation="Vertical">
+                
+                    <TextBlock Margin="10,10,10,10" HorizontalAlignment="Left" FontSize="20"><Run Text="Baselined Work Items"/></TextBlock>
+<StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="10,10,10,10" HorizontalAlignment="Left" FontSize="14" Text="Name:"></TextBlock>
+                    <TextBlock Name="lblBaselineName" Margin="5,10,10,10" HorizontalAlignment="Left" FontSize="14" Text="..."></TextBlock>
+
+                    <TextBlock Margin="10,10,10,10" HorizontalAlignment="Left" FontSize="14" Text="Created By:"></TextBlock>
+                    <TextBlock Name="lblCreatedBy" Margin="5,10,10,10" HorizontalAlignment="Left" FontSize="14" Text="..."></TextBlock>
+
+                    <TextBlock Margin="10,10,10,10" HorizontalAlignment="Left" FontSize="14" Text="Created Date:"></TextBlock>
+                    <TextBlock Name="lblCreatedDate" Margin="5,10,10,10" HorizontalAlignment="Left" FontSize="14" Text="..."></TextBlock>
+                </StackPanel>
+                <DataGrid Name="dgBaselinedWorkItems" AutoGenerateColumns="True" ItemsSource="{Binding Mode=OneWay}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" VerticalScrollBarVisibility="Auto" >
+                </DataGrid>
+
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

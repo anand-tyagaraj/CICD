@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\InstallShield\2010 StandaloneBuild\System\IsCmdBld.exe" -p "C:\Bamboo-Home\InstallShield Source and Setup\Code\LM_Server\IX Location Manager.ism"

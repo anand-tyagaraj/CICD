@@ -1,0 +1,28 @@
+https://channel9.msdn.com/Blogs/MVP-VisualStudio-Dev/Requirement-Baseline-Management-with-TFS
+http://www.modernrequirements.com/working-baseline/
+http://tfsextensions.com/workitem-baseline-2013.html
+https://microsoft.github.io/almvm/labs/tfs/smartword4tfs/
+=========================================================
+Create Baseline from Work Items
+View Baselines
+Compare Baselines
+Work items revision compare
+Generate diff report
+
+
+baseline
+review management and esign process
+
+
+PROJECT BASELINE in TFS Tasks
+1. Create VSIX installer to add menus to Visual Studio
+	a. Should involve multiple tabs and windows for baseline process
+2. Create query to get list of work items at a given time
+3. Select items you want to add to baseline
+4. On Apply Baseline, mark all items with revisionId = 1 and find a way to save these details
+	a. View Baseline(Label--Created By--Created Date--No.of Work Items)
+	b. BaseLine(WorkItemType--Title--RevId--RevDate)
+5. Capable to view baselines
+6. Update workitem revision on edit, and create new baseline. Should see different rev ids 
+7. Diff between baselines
+8. Take a report of diff between 2 baselines

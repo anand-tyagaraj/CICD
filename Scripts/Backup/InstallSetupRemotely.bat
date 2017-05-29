@@ -1,0 +1,1 @@
+"C:\SW-Gowri\PS Tools\PSTools\psexec" \\10.78.4.113 -c "C:\Bamboo-Home\Build Tasks\ExecuteSetupSilently.bat" -u .\admin -p Password1

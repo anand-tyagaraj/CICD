@@ -1,0 +1,17 @@
+https://www.visualstudio.com/en-us/docs/setup-admin/tfs/architecture/extend-vs-for-alm
+
+http://www.modernrequirements.com/integreat4tfs/#tryitnow
+
+https://msdn.microsoft.com/en-us/library/bb130317(v=vs.90).aspx
+
+https://www.visualstudio.com/en-us/docs/setup-admin/tfs/architecture/extend-vs-for-alm
+
+https://www.visualstudio.com/en-us/docs/integrate/extensions/overview
+
+https://msdn.microsoft.com/en-us/library/bb130146(v=vs.80).aspx
+
+
+IMP:
+https://channel9.msdn.com/Blogs/MVP-VisualStudio-Dev/Requirement-Baseline-Management-with-TFS
+
+http://www.modernrequirements.com/working-baseline/
