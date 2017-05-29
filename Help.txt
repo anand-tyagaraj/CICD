@@ -1,0 +1,18 @@
+*features
+*tradeoffs
+*disaster recovery/reliability
+*usability
+*response time
+*cost
+*testable/modular
+================================
+arch:
+-intent 
+-to run a test, not run whole system
+-separate business rules from plugin(web/console)
+
+start from 35 (https://www.youtube.com/watch?v=o_TH-Y78tt4)
+
+- Plugins are vulnerable to plugin to
+- DB as plugin
+-good arch defer decision as long as possible
